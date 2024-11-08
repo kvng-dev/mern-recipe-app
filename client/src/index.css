@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: cursive;
+}
+
+.nav {
+  height: 10vh;
+  width: 100%;
+  background: rgb(233, 226, 226);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 5px rgba(62, 58, 58, 0.3);
+  position: fixed;
+  top: 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.auth {
+  background: rgb(219, 215, 215);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.login,
+.register {
+  margin: 50px 0;
+  width: 50%;
+  background: white;
+  padding: 50px;
+}
+
+.login label,
+.register label {
+  display: block;
+  text-align: center;
+}
+
+.login h2,
+.register h2 {
+  /* text-align: ;; */
+  margin: 10px 0;
+}
+
+.login div,
+.register div {
+  margin-bottom: 20px;
+}
+
+.login div input,
+.register div input {
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 9px;
+  width: 100%;
+  border: 1px solid goldenrod;
+}
+
+.login button,
+.register button {
+  width: 100%;
+  padding: 7px 12px;
+  font-family: inherit;
+  background: goldenrod;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.create {
+  width: 80%;
+  background: rgb(248, 244, 244);
+  margin: 50px auto;
+  height: 70vh;
+  padding: 60px;
+}
+
+.create form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.create form input,
+.create form button,
+.create form textarea {
+  width: 60%;
+  padding: 0.5rem;
+}
+
+.create form button {
+  margin-top: 10px;
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  background: #000;
+  color: white;
+  cursor: pointer;
+}
+
+.create form button:hover {
+  color: white;
+  background: rgb(107, 102, 102);
+}
+
+.recipe {
+  width: 100%;
+  background: rgb(223, 220, 220);
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.recipe .recipe-list {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.recipe .recipe-list li {
+  background: white;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.recipe .recipe-list li button {
+  padding: 0.3rem;
+  border: none;
+  font-family: inherit;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save {
+  background: rgb(78, 227, 78);
+}
+
+.del {
+  background: red;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background: rgba(36, 225, 52, 0.3);
+  cursor: not-allowed;
+}
